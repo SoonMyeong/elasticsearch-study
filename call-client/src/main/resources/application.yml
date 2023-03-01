@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+logging:
+  level:
+    com.test.demo2 : debug
+
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            loggerLevel : FULL
