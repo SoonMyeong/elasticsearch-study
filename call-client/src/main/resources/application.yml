@@ -1,5 +1,9 @@
 server:
   port: 8081
+  tomcat:
+    threads:
+      max: 1
+      min-spare: 1
 
 logging:
   level:

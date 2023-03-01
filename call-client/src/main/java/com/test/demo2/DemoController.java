@@ -10,7 +10,8 @@ public class DemoController {
     private final EsApiClient esApiClient;
 
     @GetMapping("/test")
-    public String test() {
+    public String test() throws InterruptedException {
+        Thread.sleep(500);
         return esApiClient.getData();
     }
 }
